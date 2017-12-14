@@ -16,8 +16,8 @@ describe('cubeNum', function() {
         });
 
         it('toCube should return type number', function() {
-            let result = CubeNum.toCube(num1);
-            assert.typeof(result, 'number');
+            let result = cubeNum.toCube(num1);
+            assert.typeOf(result, 'number');
         });
     });
 });

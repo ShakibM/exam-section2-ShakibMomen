@@ -10,17 +10,17 @@ describe("myPowerTest", function() {
     describe("squaring", function() {
         it('toSquare(' + num1 + ') should return square of "' + num1 + '"', function() {
             let result = squareNum.toSquare(num1);
-            assert.equal(result, Math, pow(num1, 2));
+            assert.equal(result, Math.pow(num1, 2));
         });
 
         it('toSquare(' + str1 + ') should return square of "' + str1 + '"', function() {
-            let result = cubeNum.toCube(str1);
-            assert.equal(result, Math, pow(num1, 2));
+            let result = squareNum.toSquare(str1);
+            assert.equal(result, Math.pow(num1, 2));
         });
 
         it('toSquare should return type number', function() {
-            let result = SquareNum.toSquare(num1);
-            assert.typeof(result, 'number');
+            let result = squareNum.toSquare(num1);
+            assert.typeOf(result, 'number');
         });
     });
 
@@ -36,8 +36,8 @@ describe("myPowerTest", function() {
         });
 
         it('toCube should return type number', function() {
-            let result = CubeNum.toCube(num1);
-            assert.typeof(result, 'number');
+            let result = cubeNum.toCube(num1);
+            assert.typeOf(result, 'number');
         });
     });
 });

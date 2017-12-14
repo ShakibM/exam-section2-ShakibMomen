@@ -17,7 +17,7 @@ describe('squareNum', function() {
 
         it('toSquare should return type number', function() {
             let result = squareNum.toSquare(num1);
-            assert.typeof(result, 'number');
+            assert.typeOf(result, 'number');
         });
     });
 });

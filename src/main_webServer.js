@@ -7,12 +7,12 @@ app.set('views', './src/views');
 app.engine('html', require('ejs').renderFile);
 
 app.get('/', function(req, res) {
-    var data2Template = {
+    var data2template = {
         head: { title: 'Home Page' },
         name: 'Shakib',
         lastname: 'Momen'
     };
-    res.render('./pages/');
+    res.render('./pages/home', data2template);
 });
 
 app.get('/square', function(req, res) {
